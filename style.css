@@ -543,12 +543,34 @@ footer{
     color: #fff;
     text-align: center;
 }
-footer span a{
-    color: crimson;
-    text-decoration: none;
+.footer-info {
+    text-align: center; /* Center align the text */
+    margin: 20px auto; /* Center align the container */
+    font-size: 16px; /* Default font size */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
-footer span a:hover{
-    text-decoration: underline;
+
+.footer-info span {
+    display: block; /* Make each span take full width */
+    margin-bottom: 10px; /* Space between spans */
+}
+
+.footer-info a {
+    text-decoration: none; /* Remove underline from links */
+    color: #0693E3; /* Default color for links */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.footer-info a:hover {
+    color: #9b51e0; /* Change color on hover */
+    transform: translateY(-5px); /* Move link up on hover */
+}
+
+/* Responsive font size */
+@media (max-width: 768px) {
+    .footer-info {
+        font-size: 14px; /* Decrease font size on smaller screens */
+    }
 }
 
 
